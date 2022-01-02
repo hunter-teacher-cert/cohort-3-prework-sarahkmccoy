@@ -1,6 +1,6 @@
-* Last name: McCoy
-* First name: Sarah
-* Github username: sarahkmccoy
+* Last name: McCoy	
+* First name:Sarah
+* Github username:sarahkmccoy
 
 * Instructions:
 
