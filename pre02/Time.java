@@ -15,7 +15,7 @@ public class Time{
 				double percentdone = sincemidnight/(24*3600)*100;
 				System.out.println("So, " + percentdone + "% of the day has passed.");
 
-				//using int...It suprised me that placing the *100 next to the sincemidnight formula dealt with the int rounding error, while placing at the end of the expression did not.
+				//using int...It suprised me that placing the *100 next to the sincemidnight formula dealt with the int rounding error, while placing at the end of the expression did not.  I think I get it though.
 				int hour2 = 10;
 				int minute2 = 48;
 				int second2= 45;
