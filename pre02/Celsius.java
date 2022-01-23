@@ -1,11 +1,10 @@
 import java.io.*;
 import java.util.*;
-import java.util.Scanner;
+
 
 public class Celsius{
-    public static void main(String[] args){
-        System.out.println("Hello world!");
-
+    public static void main(String[] args)
+		{
 				double celsius;
 				double fahrenheit;
 				Scanner in = new Scanner(System.in);
