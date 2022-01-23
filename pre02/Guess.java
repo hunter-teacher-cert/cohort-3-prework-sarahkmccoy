@@ -1,8 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+
 public class Guess{
-    public static void main(String[] args){
+    public static void main(String[] args)
+		{
 			//pick a random number
 				Random random = new Random();
         int number = random.nextInt(100)+1;
@@ -13,7 +15,7 @@ public class Guess{
 				System.out.println("Type a number:");
 				guess = in.nextInt();
 				System.out.println("Your guess is: " + guess);
-				error = abs(error - guess);
+				error = number - guess;
 				System.out.println("The number I was thinking of is: " + number);
 				System.out.println("You were off by: " + error);
     }
