@@ -1,4 +1,5 @@
 The output of this program is:
+
 No, I wug.
 You wugga wug.
 I wug.
@@ -16,4 +17,4 @@ The way it runs is:
 10) The main method calls baffle, which prints "wug"
 11) baffle calls ping, which prints a period and ends the line.  DONE.
 
-
+As I suspected, having ping call baffle (which calls ping which calls baffle which calls ping which calls baffle...) results in some sort of recursive mess that keeps looping until the stack overflows and generates an error message.
