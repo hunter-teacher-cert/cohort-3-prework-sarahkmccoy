@@ -4,10 +4,10 @@ import java.util.*;
 public class beer{
     public static void main(String[] args){
         System.out.println("Here's the song:");
-				countup(99);
+				countdown(99);
 				
     }
-		public static void countup(int n) {
+		public static void countdown(int n) {
     if (n == 1) {
 				System.out.println(n + " bottle of beer on the wall,");
 				System.out.println(n + " bottle of beer!");
@@ -26,7 +26,7 @@ public class beer{
 				System.out.println( "Ya' take one down, ya pass it around,");
 				System.out.println(n - 1 + " bottles of beer on the wall!");
 				System.out.println();
-				countup(n - 1);
+				countdown(n - 1);
 			
     }
 }
