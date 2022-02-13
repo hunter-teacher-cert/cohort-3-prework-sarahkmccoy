@@ -18,15 +18,12 @@ public class Methods{
 	//I debated using a long or statement
 		if (a + b <= c) {
 			return false;
-		}
-		else if (b + c <= a) {
-		return false;
-		}
-		else if (a + c <= b) {
+		}else if (b + c <= a) {
 			return false;
-		}
-		else {
-		return true;
+		}else if (a + c <= b) {
+			return false;
+		}else {
+			return true;
 		}
 	}
 
