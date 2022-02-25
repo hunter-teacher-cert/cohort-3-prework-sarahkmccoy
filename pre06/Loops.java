@@ -6,6 +6,7 @@ public class Loops{
 	    //Call the methods defined below
 			System.out.println(squareRoot(169));
 			System.out.println(power(2.3,5));
+			System.out.println(factorial(5));
 	}
 		
   //7.9 #2
@@ -28,7 +29,13 @@ public class Loops{
 	 return x;
 	
 	}
-	
+	//7.9 #4
+	public static int factorial(int n){
 		
+	  for (int i = n-1; i >1; i--){
+			n = n*i;
+		}
+		return n;
+	}
 }
 
