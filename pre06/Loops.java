@@ -24,7 +24,7 @@ public class Loops{
 	public static double power(double x, int n) {
 		double factor = x;
 		for (int i = 1; i < n; i++){
-		x = x* factor;
+			x = x* factor;
 		}
 	 return x;
 	
