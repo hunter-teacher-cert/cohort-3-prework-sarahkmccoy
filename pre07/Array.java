@@ -12,7 +12,7 @@ public class Array{
 		powArray(a,n);
 		System.out.println(Arrays.toString(a));
 		
-		//Calling histogram with  numcounters counters and array of numscounters random values.  It seems that I have 50 counters, then I need to limit my randomArray to numbers up to 50. 
+		//Calling histogram with numcounters counters and array of numscounters random values up to numcounters. ie, if I have 50 counters, then I need to limit my randomArray to numbers up to 50.  Would like to come back to this and generalize more.
 		int numcounters = 77;
 		int[] class_scores = randomArray(numcounters);
 		System.out.println("Here is an array of " + numcounters + " random scores between 0 and " + numcounters +":");
