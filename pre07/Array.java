@@ -12,12 +12,12 @@ public class Array{
 		powArray(a,n);
 		System.out.println(Arrays.toString(a));
 		
-		//Calling histogram with  numcounters counters and array of numscores random values.  I can't get it to work for fewer than 100 counters.  Getting an index out of bounds error code.  I'm not tracking how its working.
-		int numcounters = 100;
-		int[] class_scores = randomArray(100);
-		System.out.println("Here is an array of 100 random scores");
+		//Calling histogram with  numcounters counters and array of numscounters random values.  It seems that I have 50 counters, then I need to limit my randomArray to numbers up to 50. 
+		int numcounters = 77;
+		int[] class_scores = randomArray(numcounters);
+		System.out.println("Here is an array of " + numcounters + " random scores between 0 and " + numcounters +":");
 		System.out.println(Arrays.toString(class_scores));
-		System.out.println("Here is a histogram of those scores, using 100 counters");
+		System.out.println("Here is a histogram of those scores, using " +numcounters+ " counters");
 		System.out.println(Arrays.toString(histogram(class_scores, numcounters)));
 	}
 //powArray
@@ -28,12 +28,12 @@ public class Array{
 			return a;
 		}
 
-//Create a random array of integers
+//Create a random array of integers between 1 and and the size of the array
 	public static int[] randomArray(int size){
 		Random random = new Random();
 		int[]a = new int[size];
 		for (int i=0; i <a.length; i++) {
-			a[i]=random.nextInt(101);
+			a[i]=random.nextInt(size);
 		}
 			return a;
 		}
