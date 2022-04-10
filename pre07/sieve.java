@@ -30,14 +30,14 @@ public class sieve{
         {
             r[i]=true;//first set everything to true
         }
-			//start at 2.  Check divisibility up until the squareroot of the value.
+			//start at 2.  Run the sieve until you reach the square root of n (because after that you're just finding the commutative factor pairs, like 3*7 vs. 7*3)
         for (int i=2; i < Math.sqrt(n); i++)
         {
-             if(r[i]==true) 
+             if(r[i]==true)//If it's currently marked as prime
              {
-                for(int j=(i*i); j<n; j=j+i) 
+                for(int j=(i*i); j<n; j=j+i) //Find the multiples of that value
                 {
-                   r[j]=false;
+                   r[j]=false;//set the multiples to composite
                 }
              }
         }
