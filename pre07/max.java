@@ -3,7 +3,8 @@ import java.util.*;
 
 public class max{
 	public static void main(String[] args) {
-		int[] numlist = {5, 30, 1000, -1, 100,-20};//An array with a non-repeated max value.
+		//An array with a non-repeated max value.
+		int[] numlist = {5, 30, 1000, -1, 100,-20};
 		System.out.println("Here is an array:");
 		System.out.println(Arrays.toString(numlist));
 		int maxindex = indexOfMax(numlist);
